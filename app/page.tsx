@@ -1,20 +1,20 @@
 export default function Home() {
   return (
-    <main className="bg-slate-950 min-h-screen flex items-center justify-center p-6">
+    <main className="bg-white min-h-screen flex items-center justify-center p-6">
 
-      <div className="group relative w-full max-w-md rounded-3xl overflow-hidden shadow-2xl">
+      <div className="group relative w-full max-w-md rounded-3xl overflow-hidden shadow-xl">
 
         <img
           src="https://static.vecteezy.com/system/resources/previews/001/882/528/non_2x/beautiful-landscape-pine-forest-with-mesmerizing-mountain-views-free-vector.jpg"
           alt="Paisaje natural"
-          className="w-full h-[420px] object-cover transition-transform duration-700 group-hover:scale-110"
+          className="w-full h-[420px] object-cover transition-transform duration-700 group-hover:scale-105"
         />
 
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
 
         <div className="absolute bottom-0 p-8 flex flex-col gap-4 text-white">
 
-          <span className="text-sm uppercase tracking-widest text-indigo-400">
+          <span className="text-sm uppercase tracking-widest text-indigo-500">
             Naturaleza
           </span>
 
@@ -22,18 +22,26 @@ export default function Home() {
             Bosque & Montañas
           </h2>
 
-          <p className="text-sm text-gray-300 max-w-sm">
+          <p className="text-sm text-gray-200 max-w-sm">
             Un paisaje inspirador que combina tranquilidad y una vista panorámica impresionante.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 pt-4">
-            <button className="px-6 py-2 bg-indigo-600 hover:bg-indigo-700 rounded-full text-sm font-medium transition duration-300">
-              Explorar
-            </button>
+          <div className="flex flex-col sm:flex-row gap-6 pt-4 text-sm font-medium">
 
-            <button className="px-6 py-2 border border-white/40 hover:bg-white hover:text-black rounded-full text-sm font-medium transition duration-300">
-              Más Info
-            </button>
+            <a
+              href="#"
+              className="text-indigo-400 hover:text-indigo-600 transition"
+            >
+              Explorar →
+            </a>
+
+            <a
+              href="#"
+              className="text-white/80 hover:text-white transition"
+            >
+              Más información →
+            </a>
+
           </div>
 
         </div>
